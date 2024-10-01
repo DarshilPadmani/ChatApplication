@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIRTUIX</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+</head>
+<body>
+    <!-- Name Modal (only shows when no name is set) -->
+    <div id="name-modal">
+        <div id="name-form">
+            <h2>Enter your name</h2>
+            <input id="username" type="text" placeholder="Your name..." required>
+            <button id="set-name-btn">Set Name</button>
+        </div>
+    </div>
+
+    <!-- Chat Container -->
+    <div id="chat-container" style="display: none;">
+        <header id="chat-header">
+            <h2>VIRTUIX</h2>
+            <div id="status-indicator"></div>
+        </header>
+
+        <div id="chat-box">
+            <div id="messages"></div>
+        </div>
+
+        <div id="typing-indicator"></div>
+
+        <div id="input-container">
+            <input id="msg-input" type="text" placeholder="Type a message..." autocomplete="off" required>
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="/static/chat.js"></script>
+</body>
+</html>
